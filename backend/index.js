@@ -12,7 +12,7 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-const ConnectDB = async() => {
+const ConnectDB = async () => {
     try {
         await mongoose.connect(process.env.MONGO_URL)
         console.log("database connection established")
@@ -25,7 +25,7 @@ dotenv.config()
 app.use(express.json())
 
 
-app.listen(process.env.PORT,() => {
+app.listen(process.env.PORT, () => {
     ConnectDB();
-    console.log("app listened on port" + process.env.PORT) 
+    console.log("app listened on port" + process.env.PORT)
 })
