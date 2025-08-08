@@ -37,7 +37,11 @@ app.use(cookieParser());
 
 // ✅ CORRECT CORS configuration
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 
+  [
+    'http://localhost:3000',
+    'https://tech-blog-frontend.vercel.app',
+  ],
   credentials: true,
 };
 app.use(cors(corsOptions));
