@@ -40,7 +40,7 @@ const corsOptions = {
   origin: 
   [
     'http://localhost:3000',
-    'https://tech-blog-frontend.vercel.app',
+    'https://techbloggy.vercel.app',
   ],
   credentials: true,
 };
