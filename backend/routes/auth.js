@@ -7,7 +7,6 @@ const jwt=require('jsonwebtoken')
 
 //REGISTER
 router.post("/register",async(req,res)=>{
-    console.log("User registration request received")
     try{
         const {username,email,password}=req.body
         const salt=await bcrypt.genSalt(10)
@@ -20,7 +19,7 @@ router.post("/register",async(req,res)=>{
     catch(err){
         res.status(500).json(err)
     }
-
+    console.log(err)
 })
 
 
@@ -49,6 +48,7 @@ router.post("/login",async (req,res)=>{
     catch(err){
         res.status(500).json(err)
     } 
+    console.log(err)
 })
 
 

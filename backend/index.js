@@ -8,10 +8,10 @@ const path = require("path");
 const cookieParser = require('cookie-parser');
 
 // Import routes
-const authRoute = require('./routes/auth');
-const userRoute = require('./routes/users');
-const postRoute = require('./routes/posts');
-const commentRoute = require('./routes/comments');
+const authRoute = require('../routes/auth');
+const userRoute = require('../routes/users');
+const postRoute = require('../routes/posts');
+const commentRoute = require('../routes/comments');
 
 // Load environment variables
 dotenv.config();
