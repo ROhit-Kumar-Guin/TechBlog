@@ -67,9 +67,10 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
 });
 
 // Start server
-app.listen(process.env.PORT, () => {
+app.listen(() => {
   connectDB();
-  console.log("App is running on port " + process.env.PORT);
+  //console.log("App is running on port " + process.env.PORT);
+  console.log("App is running");
 });
 
 
