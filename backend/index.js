@@ -67,10 +67,13 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
 });
 
 // Start server
-app.listen(process.env.PORT, () => {
-  connectDB();
-  console.log("App is running on port " + process.env.PORT);
-});
+// app.listen(process.env.PORT, () => {
+//   connectDB();
+//   console.log("App is running on port " + process.env.PORT);
+// });
 
+// Call DB connect at module load
+connectDB();
 
-
+// Export the app for Vercel
+module.exports = app;
