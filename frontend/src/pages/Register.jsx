@@ -35,8 +35,8 @@ const Register = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between px-6 md:px-[200px] py-4">
-    <h1 className="text-lg md:text-xl font-extrabold bg-[#1b0043]"><Link to="/">TechBloggy</Link></h1>
+      <div className="flex items-center justify-between px-6 md:px-[200px] py-4 bg-[#f5f5dc]">
+    <h1 className="text-lg md:text-xl font-extrabold text-[#1b0043]"><Link to="/">TechBloggy</Link></h1>
     <h3><Link to="/login">Login</Link></h3>
     </div>
     <div className="w-full flex justify-center items-center h-[80vh] ">
@@ -49,7 +49,7 @@ const Register = () => {
          {error && <h3 className="text-red-500 text-sm ">Something went wrong</h3>}
          <div className="flex justify-center items-center space-x-3">
           <p>Already have an account?</p>
-          <p className="text-gray-500 hover:text-black"><Link to="/login">Login</Link></p>
+          <p className="text-[#1b0043]"><Link to="/login">Login</Link></p>
          </div>
        </div>
     </div>
